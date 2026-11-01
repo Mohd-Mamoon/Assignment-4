@@ -1,0 +1,298 @@
+
+
+:root {
+
+    /* Colour palette */
+    --primary-color: #14213d;
+    --secondary-color: #2563eb;
+    --background-color: #f1f5f9;
+    --card-color: #ffffff;
+    --text-color: #334155;
+
+    /* Fonts */
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+
+    /* Font sizes */
+    --heading-size: 36px;
+    --subheading-size: 24px;
+    --body-size: 16px;
+
+    /* Spacing */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+
+
+/* Element selector */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--body-font);
+
+    font-size: var(--body-size);
+
+    color: var(--text-color);
+
+    background-color: var(--background-color);
+
+    line-height: 1.7;
+}
+
+
+header {
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: var(--spacing-large) 20px;
+
+}
+
+header h1 {
+
+    font-family: var(--heading-font);
+
+    font-size: var(--heading-size);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+header p {
+
+    font-size: 17px;
+
+    color: #dbeafe;
+
+}
+
+
+
+
+nav {
+
+    margin-bottom: 30px;
+
+}
+
+nav a {
+
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 8px 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+/* Pseudo-class selector */
+
+nav a:hover {
+
+    color: #60a5fa;
+
+    text-decoration: underline;
+
+}
+
+
+
+#about,
+#course {
+
+    background-color: var(--card-color);
+
+    max-width: 900px;
+
+    margin: var(--spacing-large) auto;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* Class selector */
+
+section h2 {
+
+    font-family: var(--heading-font);
+
+    color: var(--primary-color);
+
+    font-size: var(--subheading-size);
+
+    border-bottom: 3px solid var(--secondary-color);
+
+    padding-bottom: 10px;
+
+}
+
+
+/* Descendant selector */
+
+section p {
+
+    color: var(--text-color);
+
+    text-align: justify;
+
+}
+
+
+section > h3 {
+
+    color: var(--secondary-color);
+
+    font-family: var(--heading-font);
+
+    margin-top: 25px;
+
+}
+
+
+#about img {
+
+    display: block;
+
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #dbeafe;
+
+    margin: 20px auto;
+
+}
+
+
+
+#course ol {
+
+    padding-left: 25px;
+
+}
+
+#course li {
+
+    padding: 6px 0;
+
+}
+
+#course li::marker {
+
+    color: var(--secondary-color);
+
+}
+
+
+/* Description list */
+
+#course dt {
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+    margin-top: 12px;
+
+}
+
+#course dd {
+
+    margin-left: 0;
+
+}
+
+
+hr {
+
+    border: none;
+
+    height: 1px;
+
+    background-color: #cbd5e1;
+
+}
+
+
+footer {
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: var(--spacing-medium);
+
+    margin-top: 50px;
+
+}
+
+footer p {
+
+    margin: 5px;
+
+    font-size: 14px;
+
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+
+        font-size: 27px;
+
+    }
+
+    nav a {
+
+        margin: 6px;
+
+        font-size: 14px;
+
+    }
+
+    #about,
+    #course {
+
+        margin: 20px 12px;
+
+        padding: 20px;
+
+    }
+
+}
